@@ -1,0 +1,111 @@
+.productPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.productImages {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.productMainImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slider {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sliderTrack {
+  background-color: #e5e5e5;
+  border-radius: 9999px;
+  height: 5px;
+  position: relative;
+}
+
+.sliderRange {
+  background-color: #000;
+  border-radius: 9999px;
+  height: 100%;
+  position: absolute;
+}
+
+.sliderThumb {
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.productInfo {
+  text-align: center;
+}
+
+.productName {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.productDescription {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.productOptions {
+  margin-bottom: 20px;
+}
+
+.selectTrigger {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.selectContent {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  max-width: 200px;
+}
+
+.addToCartButton {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.addToCartButton:hover {
+  background-color: #333;
+}
+
+@media (min-width: 768px) {
+  .productPage {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .productImages,
+  .productInfo {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .productImages {
+    margin-right: 40px;
+  }
+}
